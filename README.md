@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ReadyChatAI
 
-## Getting Started
+*FrontEnd intership for ReadyChatAI.*
 
-First, run the development server:
+I developed this project using Next.js to have a fast and efficient web application, combined with Tailwind CSS for styling and React. I created a Single Page Application (SPA) where, upon initiation, users have the option to choose which user's messages they want to display and also on which platform. Previously, users were required to select a user before being able to view the messages. I wasn't able to achieve real-time message popping as each platform was opened, but I did manage to display messages based on each conversation, especially if one of the messages was "Hello".
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To accomplish this, I made API calls using fetch, filtering first by user, and then by platform to fetch messages from each user on each platform. Then, using state management, I displayed the messages for that platform.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I designed the application this way because I believe it's the fastest way to render the application and also easy to understand for its usage.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![App Screenshot](home1.png)
 
-## Deploy on Vercel
+![App Screenshot](home2.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![App Screenshot](home3.png)
